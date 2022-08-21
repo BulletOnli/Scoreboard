@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-body {
+    width: 100%;
+    height: 77vh;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.scoreboard {
+    width: 50vw;
+    height: 400px;
+    background-color: white;
+    border: 4px solid black;
+    border-radius: 30px;
+    display: flex;
+}
+
+.team-a {
+    width: 47%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.middle-section {
+
+    width: 6%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-section h1 {
+    font-size: 40px;
+    display: flex;
+    font-family: 'Shrikhand', cursive;
+}
+
+.reset {
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 30px;
+    background-color: #fd72aa;
+}
+
+.team-b {
+    width: 47%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.team-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 60px;
+    margin-top: 30px;
+    background-color: #fd72aa;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+.team-name p {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.score-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffbd59;
+    width: 80%;
+    height: 270px;
+    margin-top: 10px;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+.score-section {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-section p {
+    font-size: 200px;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.bottons {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-botton,
+.minus-botton {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #fd72aa;
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+    .main-body {
+        height: 79vh;
+    }
+    .scoreboard {
+        width: 500px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        height: 30px;
+    }
+    .main-body {
+        height: 90vh;
+    }
+    .title {
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .scoreboard {
+        width: 300px;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-a {
+        margin: 0;
+        height: 500px
+    }
+    .team-name {
+        width: 200px;
+        height: 40px;
+    }
+    .team-name p {
+        font-size: 20px;
+    }
+    .score-box {
+        width: 230px;
+        height: 180px;
+    }
+    .score-section p {
+        font-size: 120px;
+    }
+    .bottons {
+        height: 20px;
+    }
+    .middle-section {
+        margin-top: 20px;
+    }
+    .reset {
+        margin: 0;
+    }
+}
