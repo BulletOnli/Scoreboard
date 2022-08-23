@@ -155,46 +155,48 @@
 }
 
 @media (max-width: 1100px) {
+    nav {
+        width: 100vw;
+    }
     .main-body {
-        height: 79vh;
+        height: 100vh;
     }
     .scoreboard {
         width: 500px;
         margin-left: 20px;
         margin-right: 20px;
     }
+    .team-name {
+        width: 200px;
+        height: 40px;
+        font-size: 30px;
+    }
+    .team-name::placeholder {
+        font-size: 20px;
+    }
+    .contact {
+        width: 100vw;
+    }
 }
 
-@media (max-width: 500px) {
-    .header {
-        height: 30px;
-    }
-    .main-body {
-        height: 100vh;
+@media (max-width: 600px) {
+    .contact a {
+        font-size: 15px;
+        margin-right: 30px;
     }
     .title {
         font-size: 25px;
         margin-top: 10px;
         margin-bottom: 10px;
+        text-align: center;
     }
     .scoreboard {
         width: 300px;
-        height: 90vh;
+        height: 80vh;
         margin-top: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    .team-a {
-        margin: 0;
-        height: 500px
-    }
-    .team-name {
-        width: 200px;
-        height: 40px;
-    }
-    .team-name p {
-        font-size: 20px;
     }
     .score-box {
         width: 230px;
@@ -207,9 +209,18 @@
         height: 20px;
     }
     .middle-section {
-        margin-top: 20px;
+        margin-top: 0;
     }
     .reset {
         margin: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    nav {
+        width: 100vw;
+    }
+    nav img {
+        margin-left: 20px;
     }
 }
